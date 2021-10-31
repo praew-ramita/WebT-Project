@@ -14,12 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- icon -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fa4852718f.js" crossorigin="anonymous"></script>
+
 
     <link rel="stylesheet" href="index.css">
     <title>Home</title>
@@ -27,6 +29,7 @@
 
 <body>
     <div class="page1">
+        <!-- <div class="shadow"></div> -->
         <header>
             <nav class="main-nav">
                 <input type="checkbox" id="check" />
@@ -42,72 +45,101 @@
                         </div>
 
                         <div id="star">
-                            <a href="#">
-                                <li><i class="fa fa-star" id="staricon"></i></li>
-                                <P id="linktxt">KANG DANIEL</P>
+                            <div class="linkbox">
+                                <li>
+                                    <a class="fa fa-star" id="staricon"></a>
+                                </li>
+                                <p id="linktxt">KANG DANIEL</p>
                                 <div class="dropdown-content">
+                                    <div class="lineblue"></div>
                                     <a href="#">PROFILE & BIOGRAPHY</a>
-                                    <a href="#" class="fa fa-heart">&nbsp;&nbsp;PHILANTHROPY</a>
-                                    <a href="#" class="	fa fa-tree">&nbsp;&nbsp;AWARDS & ACHIEVEMENTS</a>
-                                    <a href="#" class="fa fa-smile-o">&nbsp;&nbsp;HIS DANCING</a>
-                                    <a href="#" class="fa fa-align-justify">&nbsp;&nbsp;SON OF BUSAN</a>
+                                    <a href="#">
+                                        <i class="fas fa-hand-holding-heart"></i>
+                                        <span>&nbsp;PHILANTHROPY</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-crown"></i>
+                                        <span>&nbsp;AWARDS & ARCHIEVEMENTS</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-running"></i>
+                                        <span>&nbsp;HIS DANCING</span>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fas fa-water"></i>
+                                        <span>&nbsp;SON OF BUSAN</span>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
 
                         <div id="music">
-                            <a href="#">
-                                <li><i class="fa fa-music" id="musicicon"></i></li>
-                                <P id="linktxt">MUSIC & TV</P>
-                            </a>
+                            <div class="linkbox">
+                                <li>
+                                    <a class="fa fa-music" id="musicicon"></a>
+                                </li>
+                                <p id="linktxt">MUSIC & TV</p>
+                            </div>
                         </div>
 
                         <div id="camera">
-                            <a href="#">
-                                <li><i class="fa fa-camera" id="cameraicon"></i></li>
-                                <P id="linktxt">MODELLING</P>
+                            <div class="linkbox">
+                                <li>
+                                    <a class="fa fa-camera" id="cameraicon"></a>
+                                </li>
+                                <p id="linktxt">MODELLING</p>
                                 <div class="dropdown-content">
+                                    <div class="lineblue"></div>
                                     <a href="#">ADVERTISEMENT MODEL</a>
                                     <a href="#">MAGAZINES</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
 
                         <div id="folder">
-                            <a href="#">
-                                <li><i class="fa fa-folder-open" id="fileicon"></i></li>
-                                <P id="linktxt">ARCHIVE</P>
+                            <div class="linkbox">
+                                <li>
+                                    <a class="fa fa-folder-open" id="fileicon"></a>
+                                </li>
+                                <p id="linktxt">ARCHIVE</p>
                                 <div class="dropdown-content">
+                                    <div class="lineblue"></div>
                                     <a href="#">NEW ARCHIVE</a>
                                     <a href="#">TRANSLATIONS</a>
                                     <a href="#">MUSIC & FAN EVENTS</a>
                                     <a href="#">MEDIA & MERCHANDISE</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
 
                         <div id="moon">
-                            <a href="#">
-                                <li><i class="fa fa-moon-o" id="moonicon"></i></li>
-                                <P id="linktxt">FANS</P>
+                            <div class="linkbox">
+                                <li>
+                                    <a class="fas fa-moon" id="moonicon"></a>
+                                </li>
+                                <p id="linktxt">FANS</p>
                                 <div class="dropdown-content">
+                                    <div class="lineblue"></div>
                                     <a href="#">DANITY</a>
                                     <a href="#">DANITY GLOSSARY</a>
                                     <a href="#">FANSITES LINKS</a>
                                 </div>
-                            </a>
+                            </div>
 
                         </div>
 
                         <div id="hand">
-                            <a href="#">
-                                <li><i class="fa fa-handshake-o"></i></li>
-                                <P id="linktxt">WEBSITE</P>
+                            <div class="linkbox">
+                                <li>
+                                    <a class="fas fa-hands-helping"></a>
+                                </li>
+                                <p id="linktxt">WEBSITE</p>
                                 <div class="dropdown-content">
+                                    <div class="lineblue"></div>
                                     <a href="#">ABOUT US</a>
                                     <a href="#">PROJECTS & EVENTS</a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
 
                         <div id="search">
@@ -128,12 +160,164 @@
 
             <br>
             <div class="button">
-                <a href="#">
-                    <i id="readmore" class="fa fa-angle-double-right">&nbsp;&nbsp;Read More</i>
+                <a href="#" id="readmore">
+                    <i id="test" class="fa fa-angle-double-right"></i>
+                    <span id="test">Read More</span>
                 </a>
             </div>
         </div>
 
+        <div class="scrolldown">
+            <a href="#newalbum" class='fa fa-angle-down' id='scroll-icon'></a>
+        </div>
+    </div>
+
+    <!-- <div>รอใส่ปุ่มเพื่อนเลื่อนลงไปด้านล่าง</div> -->
+
+    <div class="page2" id="newalbum">
+        <div class="container-fluid">
+            <div class="row" id="news1">
+                <div class="col-6 half">
+                    <img id="streetwoman" src="https://ourdaniel.com/wp-content/uploads/2021/09/bg_DanielSWF.jpg">
+                    <div class="textbox1">
+                        <h1>STREET WOMAN FIGHTER</h1>
+                        <p>Mnet | Tuesday at 10:20p.m. KST</p>
+                    </div>
+                    <div class="streetbutton col-12 justify-content-center">
+                        <a href="https://www.viu.com/ott/th/th/vod/388281/Street-Woman-Fighter-2021" id="viu" target="_blank">
+                            <i id="test" class="fa fa-tv"></i>
+                            <span>VIU</span>
+                        </a>
+                        <a href="http://kshow123.net/show/street-woman-fighter/" id="kshow" target="_blank">
+                            <i id="test" class="fa fa-tv"></i>
+                            <span>Kshow</span>
+                        </a>
+                        <a href="https://www.youtube.com/playlist?list=PLzxO_TCdwgqNLD_Nz1K6QIwlMARxIO8Ki" id="playlist" target="_blank">
+                            <i id="test" class="fa fa-youtube-play"></i>
+                            <span>Playlist</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-6 half">
+                    <img id="yellow" src="https://ourdaniel.com/wp-content/uploads/2021/04/bg_DanielYELLOWcomeback.jpg">
+                    <div class="textbox2">
+                        <h1>YELLOW</h1>
+                        <p>3rd Mini Album</p>
+                    </div>
+                    <div class="linktxtbox2">
+                        <a id="ktown4u" href="https://www.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=58319&goods_no=53978">Ktown4u</a>
+                        <a id="gmarket" href="http://gsearch.gmarket.co.kr/Listview/Search?keyword=kang%20daniel%20yellow">Gmarket</a>
+                        <a id="applemusic" href="https://music.apple.com/tr/album/yellow-ep/1561309159">AppleMusic</a>
+                        <a id="spotify" href="https://open.spotify.com/album/4igVZxLMxQDV7D94RzW6cw">Spotify</a>
+                    </div>
+                    <div class="yellowbutton col-12 justify-content-center">
+                        <a href="" id="read">
+                            <i id="test" class="fa fa-search"></i>
+                            <span>Read More</span>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=sfdJRW5NGyA" id="ytmv" target="_blank">
+                            <i id="test" class="fa fa-youtube-play"></i>
+                            <span>"Antidote MV"</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row news" id="news2">
+                <div class="col-4">
+                    <div class="img-zoom">
+                        <img id="p3_1" src="https://ourdaniel.com/wp-content/uploads/2021/10/news_DisneyPlusShowcaseDramaRookiesKangDanielChaeSoobin.jpg">
+                    </div>
+                    <a id="p3_1_txt11">Kang Daniel Talks About His Upcoming Disney+ Drama ‘Rookies’ With Chae Soobin</a>
+                    <p id="p3_1_txt12">October 15th, 2021| <a id="p3_1_link1" href="#">PANN/THEQOO/NAVER</a><a id="p3_1_link1" href="#">&nbsp;&nbsp;TELEVISION</a></p>
+
+                </div>
+
+                <div class="col-4">
+                    <div class="img-zoom">
+                        <img id="p3_2" src="https://ourdaniel.com/wp-content/uploads/2021/08/news_KangDanielStreetWomanFighter.jpg">
+                    </div>
+                    <a id="p3_1_txt21">[Highlights] Mnet’s ‘Street Woman Fighter’ Ep. 2-5; Continued Praise for MC Kang Daniel</a>
+                    <p id="p3_1_txt22">October 1st, 2021| <a id="p3_1_link1" href="#">MUSIC</a><a id="p3_1_link1" href="#">&nbsp;&nbsp;YOUTUBE</a></p>
+                </div>
+
+                <div class="col-4">
+                    <div class="img-zoom">
+                        <img id="p3_3" src="https://ourdaniel.com/wp-content/uploads/2021/09/news_CharlotteWilsonTHE-HUB_TalksSongwritingKangDaniel.jpg">
+                    </div>
+                    <a id="p3_1_txt31">Charlotte Wilson (THE HUB) Talks About K-Pop Songwriting and Kang Daniel (Transcription)</a>
+                    <p id="p3_1_txt32">September 12th, 2021| <a id="p3_1_link1" href="#">FEATURED</a><a id="p3_1_link1" href="#">&nbsp;&nbsp;GENERAL</a></p>
+                </div>
+            </div>
+
+            <div class="row" id="news2">
+                <div class="col-4 ">
+                    <div class="img-zoom">
+                        <img id="p3_4" src="https://ourdaniel.com/wp-content/uploads/2021/08/news_KonnectExpandsArtistRoster_CL_Chancellor_YujuGFRIEND.jpg">
+                    </div>
+                    <a id="p3_1_txt41">[Timeline] KONNECT Ent. Expands Its Artist Roster: CL, Chancellor and Yuju (GFRIEND)</a>
+                    <p id="p3_1_txt42">August 31st, 2021| <a id="p3_1_link1" href="#">PANN/THEQOO/NAVER</a><a id="p3_1_link1" href="#">&nbsp;&nbsp;TELEVISION</a></p>
+                </div>
+
+                <div class="col-4">
+                    <div class="img-zoom">
+                        <img id="p3_5" src="https://ourdaniel.com/wp-content/uploads/2021/08/news_KangDanielStreetWomanFighterPremiere.jpg">
+                    </div>
+                    <a id="p3_1_txt51">[Highlights] Mnet’s ‘Street Woman Fighter’ Ep. 1; Viewers Praise MC Kang Daniel</a>
+                    <p id="p3_1_txt52">August 25th, 2021| <a id="p3_1_link1" href="#">PANN/THEQOO/NAVER</a><a id="p3_1_link1" href="#">&nbsp;&nbsp;TELEVISION</a></p>
+                </div>
+
+                <div class="col-4">
+                    <div class="img-zoom">
+                        <img id="p3_6" src="https://ourdaniel.com/wp-content/uploads/2021/07/news_KangDanielMCofMnetDanceSurvivalStreetWomanFighter.jpg">
+                    </div>
+                    <a id="p3_1_txt61">[Trailer] Kang Daniel Charms As the MC of Mnet’s Dance Crew Competition Program ‘Street Woman Fighter’</a>
+                    <p id="p3_1_txt62">July 27th, 2021| <a id="p3_1_link1" href="#">&nbsp;&nbsp;TELEVISION</a></p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center" id="lastbutton">
+
+                <button class="col-3" onClick="window.open('https://twitter.com/ourdaniel_com');" id="lastbut1">
+                    <i id="lastbut1_twit" class="fa fa-twitter"></i>
+                    <span>@OURDANIEL_COM</span>
+                </button>
+
+                <button class="col-3" id="lastbut2">
+                    <span>READ MORE NEWS&nbsp;</span>
+                    <i id="lastbut1_read" class="fa fa-angle-right"></i>
+                </button>
+
+            </div>
+            <div class="row justify-content-center">
+                <span class="finaltxt">News posts might not be up to date with Kang Daniel’s activities as we can’t update the website regularly.
+                    For daily news, please follow our Twitter account.</span>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="copyright ">
+        © COPYRIGHT 2018-2021 OURDANIEL.COM
+        <div class="copyicon ">
+
+            <a class="btn-copy" href="https://twitter.com/ourdaniel_com" target="_blank">
+                <i class="fa fa-twitter " id="twiticon "></i>
+            </a>
+
+
+            <a class="btn-copy" href="https://www.youtube.com/channel/UC1Cj1pLyHSOLt5f7G6blpAQ" target="_blank">
+                <i class="fa fa-youtube-play " id="yticon "></i>
+            </a>
+
+
+            <a class="btn-copy" href="https://www.flickr.com/photos/ourdaniel_com/" target="_blank">
+                <i class="fa fa-flickr "></i>
+            </a>
+
+        </div>
     </div>
 </body>
 
