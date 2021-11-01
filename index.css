@@ -23,7 +23,7 @@
      padding: 0px;
      border-width: 0px;
      width: 100%;
-     height: 240%;
+     height: 230%;
      z-index: -1;
  }
  
@@ -52,6 +52,7 @@
      text-decoration: none;
      height: max-content;
      color: #41ddd5;
+     cursor: pointer;
  }
  
  .lineblue {
@@ -150,6 +151,7 @@
      min-width: 160px;
      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
      z-index: 1;
+     font-size: 14px;
  }
  
  .dropdown-content a {
@@ -159,18 +161,107 @@
      display: block;
  }
  
+ @keyframes fade {
+     from {
+         display: none;
+     }
+     to {
+         display: block;
+     }
+ }
+ 
  .dropdown-content a:hover {
-     background-color: rgb(51, 51, 51);
+     background-color: rgba(29, 29, 29, 0.5);
  }
  
  #star:hover .dropdown-content,
+ #music:hover .dropdown-content,
  #camera:hover .dropdown-content,
  #folder:hover .dropdown-content,
  #moon:hover .dropdown-content,
  #hand:hover .dropdown-content {
      display: block;
  }
- /* ///////////// เว้นให้ music ////////////////// */
+ 
+ .box-music {
+     left: 15%;
+ }
+ 
+ .all-nav-music {
+     height: 450px;
+     width: 1100px;
+     margin: 0;
+ }
+ 
+ #leftmusic {
+     color: white;
+     padding: 40 20 0 30;
+ }
+ 
+ #leftmusic:hover,
+ #middlemusic:hover,
+ #rightmusic:hover {
+     cursor: pointer;
+ }
+ 
+ .lastalbum p {
+     margin: 0;
+ }
+ 
+ #img-lastalbum {
+     margin: 10 0 0 0;
+ }
+ 
+ #img-lastalbum img {
+     width: 100px;
+     padding: 0;
+     padding-right: 5px;
+ }
+ 
+ .lastsing {
+     margin-top: 20px;
+ }
+ 
+ .lastsing p {
+     margin: 0 0 10 0;
+ }
+ 
+ .discro {
+     height: 30px;
+     line-height: 30px;
+ }
+ 
+ #solo {
+     height: 10px;
+     margin-left: 10px;
+ }
+ 
+ #solo p,
+ #engsub p {
+     height: 25px;
+     line-height: 25px;
+     background-color: rgb(72, 201, 188);
+     width: fit-content;
+     border-radius: 5px;
+     font-size: 10px;
+     padding-right: 5px;
+     padding-left: 5px;
+ }
+ 
+ #engsub p {
+     background-color: rgba(82, 247, 230, 0.5);
+     margin-left: 20px;
+ }
+ 
+ #middlemusic {
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-image: url("https://ourdaniel.com/wp-content/uploads/2020/07/menu_musictv_01.jpg");
+ }
+ 
+ #rightmusic {
+     background-image: url("https://ourdaniel.com/wp-content/uploads/2020/07/menu_musictv_02.jpg");
+ }
  /* ///////////////////////////////////////// */
  
  #title {
