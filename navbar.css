@@ -1,0 +1,239 @@
+* {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.main-nav {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#linktxt {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    text-indent: 2px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+#link {
+    height: 20px;
+    display: inline-flex;
+}
+
+.linkbox:hover li,
+.linkbox:hover #linktxt {
+    text-decoration: none;
+    height: max-content;
+    color: #41ddd5;
+    cursor: pointer;
+}
+
+.lineblue {
+    height: 4px;
+    background: #41ddd5;
+}
+
+.navlinks {
+    list-style: none;
+    line-height: 20px;
+    /* display: inline-flex; */
+}
+
+.navlinks li {
+    /* display: inline-block; */
+    margin: 5px 50px;
+    margin-top: 20px;
+}
+
+.navlinks li {
+    color: rgb(248, 237, 171);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s linear 0s;
+}
+
+#searchicon {
+    color: white;
+}
+
+#searchicon:hover {
+    color: #41ddd5;
+}
+
+#homeicon {
+    color: #41ddd5;
+    margin-top: 10px;
+}
+
+#check {
+    display: none;
+}
+
+.menu-btn {
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 90px;
+    margin-right: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .navlinks {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        transition: all 0.5s;
+        right: -100%;
+        background: #222831;
+    }
+    .navlinks li {
+        display: block;
+    }
+    .navlinks li a {
+        font-size: 20px;
+    }
+    .navlinks li a:hover {
+        border-bottom: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+    #check:checked~.navlinks {
+        right: 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    .menu-btn {
+        margin-right: 10px;
+        font-size: 25px;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #2e2e2e;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 14px;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+@keyframes fade {
+    from {
+        display: none;
+    }
+    to {
+        display: block;
+    }
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(29, 29, 29, 0.5);
+}
+
+#star:hover .dropdown-content,
+#music:hover .dropdown-content,
+#camera:hover .dropdown-content,
+#folder:hover .dropdown-content,
+#moon:hover .dropdown-content,
+#hand:hover .dropdown-content {
+    display: block;
+}
+
+.box-music {
+    left: 15%;
+}
+
+.all-nav-music {
+    height: 450px;
+    width: 1100px;
+    margin: 0;
+}
+
+#leftmusic {
+    color: white;
+    padding: 40 20 0 30;
+}
+
+#leftmusic:hover,
+#middlemusic:hover,
+#rightmusic:hover {
+    cursor: pointer;
+}
+
+.lastalbum p {
+    margin: 0;
+}
+
+#img-lastalbum {
+    margin: 10 0 0 0;
+}
+
+#img-lastalbum img {
+    width: 100px;
+    padding: 0;
+    padding-right: 5px;
+}
+
+.lastsing {
+    margin-top: 20px;
+}
+
+.lastsing p {
+    margin: 0 0 10 0;
+}
+
+.discro {
+    height: 30px;
+    line-height: 30px;
+}
+
+#solo {
+    height: 10px;
+    margin-left: 10px;
+}
+
+#solo p,
+#engsub p {
+    height: 25px;
+    line-height: 25px;
+    background-color: rgb(72, 201, 188);
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#engsub p {
+    background-color: rgba(82, 247, 230, 0.5);
+    margin-left: 20px;
+}
+
+#middlemusic {
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url("https://ourdaniel.com/wp-content/uploads/2020/07/menu_musictv_01.jpg");
+}
+
+#rightmusic {
+    background-image: url("https://ourdaniel.com/wp-content/uploads/2020/07/menu_musictv_02.jpg");
+}
