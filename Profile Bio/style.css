@@ -84,11 +84,17 @@ body {
     content: '\002B';
 }
 
-.container{
+.part2{
     background-color: black;
     background-image: linear-gradient(180deg, black, blue);
 }
 
+.container-card{
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 /* part 3 years */
 .head3years{
     margin:0;
@@ -103,7 +109,7 @@ body {
 }
 
 #baby{
-    position: relative;
+    position: absolute;
     left: 60%;
     max-width: 800px;
 }
@@ -114,4 +120,20 @@ body {
     margin-right: 0px;
     margin-bottom: 30px;
     margin-left: 0;
+}
+
+/* .text-4{
+    width: 800px;
+    height: 100px;
+    text-align: justify;
+}
+
+.text-5{
+    width: 800px;
+    height: 100px;
+    text-align: justify;
+} */
+
+.years{
+    border-bottom: .2px solid black;
 }
